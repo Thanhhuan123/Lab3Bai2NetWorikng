@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btnObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Object Request "/>
 
+    <Button
+        android:id="@+id/btnArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Array Request "/>
     <TextView
         android:id="@+id/tv_volley"
         android:layout_width="match_parent"
@@ -21,4 +33,4 @@
         app:layout_constraintVertical_bias="0.5" />
 
 
-</ScrollView>
+</LinearLayout>

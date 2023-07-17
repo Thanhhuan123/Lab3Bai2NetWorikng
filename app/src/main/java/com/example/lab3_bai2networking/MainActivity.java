@@ -3,6 +3,9 @@ package com.example.lab3_bai2networking;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -18,15 +21,41 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Button btnOject,btnArray;
     TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnOject = findViewById(R.id.btnObj);
+        btnArray = findViewById(R.id.btnArray);
         textView = findViewById(R.id.tv_volley);
         getJSON();
+
+        btnOject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                    }
+                },3000);
+            }
+        });
+
+        btnArray.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                    }
+                },3000);
+            }
+        });
 
     }
 
